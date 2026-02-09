@@ -11,6 +11,9 @@ export interface Book {
   authors: Author[];
   price: number;
   rating: number;
+  isAudio: boolean;
+  isInfinity: boolean;
+  createdAt: Date;
 }
 
 export interface GetBooksRes {
