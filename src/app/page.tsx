@@ -8,7 +8,7 @@ import { PermScanWifi } from "@mui/icons-material";
 async function getBooks() {
   try {
     return await callApi<null, GetBooksRes>({
-      url: `/api/books?offset=1`,
+      url: `/api/books?offset=0`,
       method: ApiMethodEnums.GET,
     });
   } catch (error) {
